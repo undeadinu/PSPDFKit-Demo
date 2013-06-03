@@ -366,6 +366,7 @@ typedef NS_ENUM(NSInteger, PSPDFPageRenderingMode) {
 
 /// Add your custom UIBarButtonItems so that they won't be automatically enabled/disabled.
 /// @note You really want to add your custom close/back button there, else the user might get stuck!
+/// @warning This needs to be set BEFORE setting left/rightBarButtonItems.
 @property (nonatomic, copy) NSArray *barButtonItemsAlwaysEnabled;
 
 /// UIBarButtonItem doesn't support calculation of it's width, so we have to approximate.

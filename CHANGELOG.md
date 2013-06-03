@@ -2,6 +2,11 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.8 - 3/Jun/2013__
+
+*  Improves glyph word space detection.
+*  Fixes a potential crash on a yet unreleased future version of iOS.
+
 __v2.14.7 - 31/May/2013__
 
 *  Improved memory management for older devices like iPad1 or when kPSPDFLowMemoryEnabled is set. This helps against possible memory exhaustion on very complex documents.
