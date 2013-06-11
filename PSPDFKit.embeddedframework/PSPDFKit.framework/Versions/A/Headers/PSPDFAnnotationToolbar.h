@@ -73,7 +73,7 @@ typedef NS_ENUM(NSUInteger, PSPDFAnnotationToolbarMode) {
 - (void)updateToolbarButtons;
 
 /// Annotation toolbar delegate. (Can be freely set to any receiver)
-@property (nonatomic, weak) IBOutlet id<PSPDFAnnotationToolbarDelegate> delegate;
+@property (nonatomic, weak) IBOutlet id<PSPDFAnnotationToolbarDelegate> annotationToolbarDelegate;
 
 /// Attached pdfController.
 /// If you update tintColor, barStyle, etc - this needs to be set again to re-capture changed states.

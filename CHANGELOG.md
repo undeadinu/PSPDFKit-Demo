@@ -2,6 +2,14 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.9 - 11/Jun/2013__
+
+*  Various smaller fixes for iOS7. The source code now again compiles without any warnings.
+*  API: change `delegate` to `annotationToolbarDelegate` for the PSPDFAnnotationToolbar because UIKit now added a delegate property on the toolbar.
+*  API: The setDefaultStampAnnotations method in PSPDFStampViewController is now a class method.
+*  Fixes an issue where the thumbnail controller could mis-place the filter header after a frame resize.
+*  Fixes a potential crash when the search view controller was both scrolled and the search keyword changed at the same time.
+
 __v2.14.8 - 3/Jun/2013__
 
 *  Improves glyph word space detection.

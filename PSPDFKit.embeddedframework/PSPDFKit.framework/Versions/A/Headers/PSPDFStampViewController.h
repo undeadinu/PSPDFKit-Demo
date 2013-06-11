@@ -23,7 +23,6 @@
 @optional
 
 /// Cancel button has been pressed.
-///
 /// @warning The popover can also disappear without any button pressed, in that case the delegate is not called.
 - (void)stampViewControllerDidCancel:(PSPDFStampViewController *)stampController;
 
@@ -39,7 +38,7 @@
 + (NSArray *)defaultStampAnnotations;
 
 /// Allows to set a different set of default annotations. Thread safe.
-- (void)setDefaultStampAnnotations:(NSArray *)defaultStampAnnotations;
++ (void)setDefaultStampAnnotations:(NSArray *)defaultStampAnnotations;
 
 /// Designated initializer.
 - (id)init;
