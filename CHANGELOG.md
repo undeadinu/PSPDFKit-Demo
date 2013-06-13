@@ -2,6 +2,12 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.10 - 13/Jun/2013__
+
+*  Fixes an issue where the outline controller could hang in the "Loading..." state on older devices.
+*  Fixes an issue where in rare cases the stamp annotation text could be larger than the stamp itself.
+*  Fixes an issue where search could throw an out of range exception for specific PDF encodings.
+
 __v2.14.9 - 11/Jun/2013__
 
 *  Various smaller fixes for iOS7. The source code now again compiles without any warnings.
