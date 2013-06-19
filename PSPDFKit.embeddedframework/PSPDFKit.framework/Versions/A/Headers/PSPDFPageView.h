@@ -27,6 +27,10 @@
 @protocol PSPDFAnnotationViewProtocol;
 @class PSPDFLinkAnnotation, PSPDFPageInfo, PSPDFScrollView, PSPDFDocument, PSPDFViewController, PSPDFTextParser, PSPDFTextSelectionView, PSPDFAnnotation, PSPDFRenderStatusView, PSPDFNoteAnnotation, PSPDFOrderedDictionary, PSPDFMenuItem, PSPDFFreeTextAnnotation;
 
+// Allows to subclass the image picker controller, for example if you need to block portrait:
+// http://stackoverflow.com/questions/11467361/taking-a-photo-in-an-ios-landscape-only-app
+@interface PSPDFImagePickerController : UIImagePickerController @end
+
 @interface PSPDFAnnotationContainerView : PSPDFHUDView @end
 
 /// Send this event to hide any selections, menus or other interactive page elements.

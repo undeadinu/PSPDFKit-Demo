@@ -2,6 +2,14 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.11 - 19/Jun/2013__
+
+*  Allow subclassing of the UIImagePickerController used within PSPDFKit for special use (e.g. to block portrait display for landscape-only apps). Use overrideClass:withClass: for that.
+*  Ensure the outline page label frame is properly update in landscape mode.
+*  Fixes an issue where the annotation table view controller didn't check the editableAnnotationTypes array before offering a delete.
+*  Fixes an issue where highlightedString on PSPDFHighlightAnnotation could return incorrect results.
+*  Fixes an issue with text extraction.
+
 __v2.14.10 - 13/Jun/2013__
 
 *  Fixes an issue where the outline controller could hang in the "Loading..." state on older devices.
