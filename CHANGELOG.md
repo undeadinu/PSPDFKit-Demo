@@ -2,6 +2,18 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.12 - 24/Jun/2013__
+
+*  Improves thumbnail animations on device rotation.
+*  Improves the efficiency of the memory cache.
+*  When adding an image and the size picker is dismissed on iPad, we now use high quality instead of throwing away the image.
+*  Be more conservative about memory when kPSPDFLowMemoryMode is enabled. (Enable this if you have complex PDFs and/or memory related issues)
+*  Fixes a potential recursive call problem when editing link annotations.
+*  Fixes an issue where certain glyph frames could be calculated too small if the PDF is encoded incorrectly.
+*  Fixes an issue with generating JSON from stamp annotations.
+*  Fixes an issue where images could be rendered upside down/incorrectly when they have certain EXIF rotation settings.
+*  Fixes an UI issue when annotations couldn't be fully restored from the Copy/Paste action and created an zero-sized object.
+
 __v2.14.11 - 19/Jun/2013__
 
 *  Allow subclassing of the UIImagePickerController used within PSPDFKit for special use (e.g. to block portrait display for landscape-only apps). Use overrideClass:withClass: for that.

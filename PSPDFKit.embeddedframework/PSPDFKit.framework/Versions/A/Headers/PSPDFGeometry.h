@@ -98,3 +98,8 @@ extern inline CGPoint PSPDFRoundPoint(CGPoint point);
 
 /// Builds a rect out of two CGPoints.
 extern inline CGRect PSPDFCGRectFromPoints(CGPoint p1, CGPoint p2);
+
+// CCGRect/CGSize/CGPoint comparion mehtods that allow a comparison delta.
+BOOL PSPDFRectEqualToRectWithAccuracy(CGRect rect, CGRect rect2, CGFloat epsilon);
+BOOL PSPDFSizeEqualToSizeWithAccuracy(CGSize size, CGSize size2, CGFloat epsilon);
+BOOL PSPDFPointEqualToPointWithAccuracy(CGPoint p, CGPoint q, CGFloat epsilon);
