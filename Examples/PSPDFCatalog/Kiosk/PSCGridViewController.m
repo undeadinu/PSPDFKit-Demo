@@ -588,7 +588,7 @@
     PSCMagazineFolder *folder = cell.magazineFolder;
 
     BOOL canDelete = YES;
-    NSString *message = nil;
+    __unused NSString *message = nil;
     if ([folder.magazines count] > 1 && !self.magazineFolder) {
         message = [NSString stringWithFormat:_(@"DeleteMagazineMultiple"), folder.title, [folder.magazines count]];
     }else {
