@@ -2,6 +2,19 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.13 - 27/Jun/2013__
+
+Note: We're already working hard on the next big update with full iOS7 support and quite a few other surprises. Stay tuned!
+      Are you still supporting iOS5? We'd love to hear from you as we debate when to drop it. Contact us at peter@pspdfkit.com.
+
+*  Fixes an issue where the tab bar views could be placed inside the navigation bar in PSPDFTabbedViewController when rotated without the HUD being visible.
+*  Fixes an issue where the thumbnail bar could show stale information when the document changes.
+*  Fixes an assertion when an empty action is evaluated through a long-press.
+*  Fixes an issue where under certain conditions the note annotation controller could show redundant toolbar buttons.
+*  Fixes a potential crash for documents with weird glyph indexes when moving the text selection handles.
+*  Fixes a potential recursion crash while supportedInterfaceOrientations is evaluated.
+*  Fixes a potential empty context log warning for iOS7.
+
 __v2.14.12 - 24/Jun/2013__
 
 *  Improves thumbnail animations on device rotation.
