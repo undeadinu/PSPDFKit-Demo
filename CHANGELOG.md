@@ -2,6 +2,15 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.14 - 2/Jul/2013__
+
+*  Improve compatibility of the PSPDFMenuItem image support on iOS7.
+*  Fixes a compile issue when the Dropbox SDK is linked in combination with PSPDFKit.
+*  Fixes an assert when a link action is long-pressed and no action is set.
+*  Fixes an issue when the internal webview receives a NSURLErrorCancelled from an async operation.
+*  Fixes an issue when annotation notifications are generated from threads other than main.
+*  Fixes a crash in the Titanium proxy for certain link annotation actions.
+
 __v2.14.13 - 27/Jun/2013__
 
 Note: We're already working hard on the next big update with full iOS7 support and quite a few other surprises. Stay tuned!

@@ -235,6 +235,22 @@ if (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_6_0) { 
 #define PSPDF_IF_PRE_IOS6(...)  \
 if (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber_iOS_6_0 || __IPHONE_OS_VERSION_MAX_ALLOWED < 60000) { __VA_ARGS__ }
 
+// iOS7 compatibility
+#ifndef kCFCoreFoundationVersionNumber_iOS_7_0
+#define kCFCoreFoundationVersionNumber_iOS_7_0 838.0
+#endif
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+#define PSPDF_IF_IOS7_OR_GREATER(...) \
+if (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_7_0) { __VA_ARGS__ }
+#else
+#define PSPDF_IF_IOS7_OR_GREATER(...)
+#endif
+
+#define PSPDF_IF_PRE_IOS7(...)  \
+if (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber_iOS_7_0 || __IPHONE_OS_VERSION_MAX_ALLOWED < 70000) { __VA_ARGS__ }
+
+
 #if TARGET_IPHONE_SIMULATOR
 #define PSIsSimulator() YES
 #define PSPDF_IF_SIMULATOR(...) { __VA_ARGS__ }
