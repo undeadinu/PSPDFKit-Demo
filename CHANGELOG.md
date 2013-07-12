@@ -2,6 +2,14 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.15 - 12/Jul/2013__
+
+*  Allow PSPDFMoreBarButtonItem to be subclassable.
+*  Improve text parser compatibility with PDFs that have deeply nested XObject structures.
+*  Fixes an issue where font metrics could be too small/too large within XObjects when the font key had the same name between global resources and XObject resources.
+*  Fixes an issue where the word boundaries could be off-by-one due to manually inserted spaces at the wrong index.
+*  Fixes an issue where annotation views were not properly cached when a different view was returned via the annotationView: delegate.
+
 __v2.14.14 - 2/Jul/2013__
 
 *  Improve compatibility of the PSPDFMenuItem image support on iOS7.
