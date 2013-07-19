@@ -132,6 +132,8 @@
 #import "PSPDFFontSelectorViewController.h"
 #import "PSPDFColorSelectionViewController.h"
 #import "PSPDFNoteAnnotationController.h"
+#import "PSPDFAnnotationTableViewController.h"
+#import "PSPDFAnnotationCell.h"
 
 // labels
 #import "PSPDFLabelParser.h"

@@ -2,6 +2,13 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.16 - 19/Jul/2013__
+
+*  Further improves text extraction performance (faster searching).
+*  Enables to subclass PSPDFAnnotationCell in the PSPDFAnnotationTableViewController.
+*  Fixes an issue where logging the PSPDFDocumentProvider within dealloc could lead to resurrection.
+*  Fixes an issue with managing certain PDF caches.
+
 __v2.14.15 - 12/Jul/2013__
 
 *  Allow PSPDFMoreBarButtonItem to be subclassable.
