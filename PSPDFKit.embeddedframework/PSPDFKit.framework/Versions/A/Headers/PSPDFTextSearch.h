@@ -64,6 +64,9 @@
 /// If NSRegularExpressionSearch is enabled, hyphenations and newlines between the body text will be ignored (which is good, better results)
 @property (nonatomic, assign) NSStringCompareOptions compareOptions;
 
+/// We have to limit the number of search results to something resonable. Defaults to 600.
+@property (nonatomic, assign) NSUInteger maximumNumberOfSearchResults;
+
 /// The document that is searched.
 @property (nonatomic, weak, readonly) PSPDFDocument *document;
 

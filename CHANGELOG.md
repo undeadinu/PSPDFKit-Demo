@@ -2,6 +2,14 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.17 - 26/Jul/2013__
+
+*  Improves memory handling and search performance for very large documents. (> 10.000 pages)
+*  Improve URL encoding handling for link annotations, fixing various endoding issues.
+*  Fixes an issue where the scrollable thumbnail bar wouldn't properly update when a new document was set.
+*  Fixes an exception when the tabs of the container view controller change after being presented (e.g. outline parser detects that there's no outline to show)
+*  Fixes a rare crash in PSPDFHighlightAnnotation's highlightedString.
+
 __v2.14.16 - 19/Jul/2013__
 
 *  Further improves text extraction performance (faster searching).
