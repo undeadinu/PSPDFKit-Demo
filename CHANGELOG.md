@@ -2,6 +2,13 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.18 - 28/Jul/2013__
+
+Note: We're already working hard on the next major update with full support for iOS 7 and quite a few other surprises. Stay tuned!
+
+*  Fixes an issue with setting certain status bar styles.
+*  Fixes a regression that could result in a crash "cannot form weak reference" on iOS5.
+
 __v2.14.17 - 26/Jul/2013__
 
 *  Improves memory handling and search performance for very large documents. (> 10.000 pages)
@@ -35,9 +42,6 @@ __v2.14.14 - 2/Jul/2013__
 *  Fixes a crash in the Titanium proxy for certain link annotation actions.
 
 __v2.14.13 - 27/Jun/2013__
-
-Note: We're already working hard on the next big update with full iOS7 support and quite a few other surprises. Stay tuned!
-      Are you still supporting iOS5? We'd love to hear from you as we debate when to drop it. Contact us at peter@pspdfkit.com.
 
 *  Fixes an issue where the tab bar views could be placed inside the navigation bar in PSPDFTabbedViewController when rotated without the HUD being visible.
 *  Fixes an issue where the thumbnail bar could show stale information when the document changes.
