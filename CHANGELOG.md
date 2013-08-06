@@ -2,9 +2,16 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
-__v2.14.18 - 28/Jul/2013__
+__v2.14.19 - 6/Aug/2013__
 
 Note: We're already working hard on the next major update with full support for iOS 7 and quite a few other surprises. Stay tuned!
+
+*  Ensure didShowPageView is called on the initial display of the controller.
+*  Ensure we don't create multiple PSPDFMoreBarButtonItems while creating the toolbar.
+*  Ensure 'fileName' only ever uses the last path component. Fixes an issue where the full path would be used in the email send feature.
+*  Fixes an issue when using the bookmark filter in the thumbnail controller with a `pageRange` filter set.
+
+__v2.14.18 - 28/Jul/2013__
 
 *  Fixes an issue with setting certain status bar styles.
 *  Fixes a regression that could result in a crash "cannot form weak reference" on iOS5.
