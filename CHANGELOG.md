@@ -2,9 +2,16 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
-__v2.14.19 - 6/Aug/2013__
+__v2.14.20 - 29/Aug/2013__
 
-Note: We're already working hard on the next major update with full support for iOS 7 and quite a few other surprises. Stay tuned!
+Note: This will likely be the last update of PSPDFKit v2. We're very close to release v3, our next major version.
+Try the demo here: http://customers.pspdfkit.com/demo.
+
+*  Fixes an issue where scroll to page doesn't work for zoom levels < 1 in continuous scrolling mode.
+*  Fixes an initializer issue in PSPDFOrderedDictionary.
+*  Fixes a very rare crash on enqueuing render jobs.
+
+__v2.14.19 - 6/Aug/2013__
 
 *  Ensure didShowPageView is called on the initial display of the controller.
 *  Ensure we don't create multiple PSPDFMoreBarButtonItems while creating the toolbar.

@@ -19,6 +19,14 @@
 #error PSPDFKit supports iOS 5.0 upwards.
 #endif
 
+// PSPDFKit v2 doesn't ship with code that deals with all the changes for the new interface in iOS 7.
+// If you use Xcode 4.6.3 to compile, your app will be in UIKit "legacy mode" and look just as it would be on iOS 6.
+// We pushed several fixes and improvements so v2 will work fine on iOS 7 in legacy mode.
+// If you have questions regarding upgrading to PSPDFKit v3, feel free to contact our team at sales@pspdfkit.com
+#ifdef __IPHONE_7_0
+#warning PSPDFKit v2 doesn't support compiling with Xcode 5 (SDK 7). Please use Xcode 4.6.3 (SDK 6) or upgrade to PSPDFKit v3.
+#endif
+
 // common
 #import <UIKit/UIKit.h>
 #import "PSPDFKitGlobal.h"
