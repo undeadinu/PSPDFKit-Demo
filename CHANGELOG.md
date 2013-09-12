@@ -2,6 +2,13 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.21 - 12/Sept/2013__
+
+*  Adds a workaround for a bug where thumbnail icons could disappear in iOS 7 legacy mode.
+*  Ensures we always have a document UID set. Fixes an assert for conditions where this was missing.
+*  Fixes a rare crash related to an over-release in certain high-load conditions.
+*  Fixes the logic that checks and filters glyphs that are outside of the visible page area.
+
 __v2.14.20 - 29/Aug/2013__
 
 Note: This will likely be the last update of PSPDFKit v2. We're very close to release v3, our next major version.

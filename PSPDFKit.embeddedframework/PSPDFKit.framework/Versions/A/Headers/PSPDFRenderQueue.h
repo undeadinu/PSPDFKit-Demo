@@ -63,10 +63,10 @@ typedef NS_ENUM(NSUInteger, PSPDFRenderQueuePriority) {
 
 /// Cancel job.
 /// Use NSNotFound for `page` to delete all requests for the document.
-- (void)cancelRenderingForDocument:(PSPDFDocument *)document andPage:(NSUInteger)page delegate:(id<PSPDFRenderDelegate>)delegate;
+- (void)cancelRenderingForDocument:(PSPDFDocument *)document andPage:(NSUInteger)page delegate:(__unsafe_unretained id<PSPDFRenderDelegate>)delegate;
 
 /// Cancels all queued render-calls.
-- (void)cancelRenderingForDelegate:(id<PSPDFRenderDelegate>)delegate;
+- (void)cancelRenderingForDelegate:(__unsafe_unretained id<PSPDFRenderDelegate>)delegate;
 
 /// @name Settings
 
@@ -101,7 +101,7 @@ typedef NS_ENUM(NSUInteger, PSPDFRenderQueuePriority) {
 @interface PSPDFRenderReceipt : NSObject <NSCoding>
 
 - (id)initWithDocument:(PSPDFDocument *)document andPage:(NSUInteger)page ofSize:(CGSize)size
-              clipRect:(CGRect)clipRect annotations:(NSArray *)annotations options: (NSDictionary *)options;
+              clipRect:(CGRect)clipRect annotations:(NSArray *)annotations options:(NSDictionary *)options;
 
 @property (nonatomic, copy) NSString *renderFingerprintString;
 @property (nonatomic, assign) double timeInNanoseconds; // Not persisted. Statistic feature only.
