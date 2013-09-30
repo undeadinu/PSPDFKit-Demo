@@ -2,6 +2,10 @@
 
 Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/master.atom) | [Twitter](http://twitter.com/PSPDFKit)
 
+__v2.14.22 - 1/Oct/2013__
+
+*  Fixes a crash when parsing certain documents with invalid font references.
+
 __v2.14.21 - 12/Sept/2013__
 
 *  Adds a workaround for a bug where thumbnail icons could disappear in iOS 7 legacy mode.
