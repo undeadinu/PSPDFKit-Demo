@@ -4,10 +4,24 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
-__v3.7.6 - 4/July/2014__
+__v3.7.7 - 21/July/2014__
 
 We're hard at work on a new upcoming major release that will be fully ready for iOS 8 while also supporting iOS 7.
 The PSPDFKit 3.x branch will remain compatible with iOS 6+, while PSPDFKit 4.x will fully embrace iOS 7 and 8.
+
+*  Videos in the gallery are now reset if they are played till the end and the page changes.
+*  The 'hidden' flag for annotation objects is now also honored for the gallery. (including audio)
+*  Fixes an issue when the device is being rotated while in erase mode.
+*  Fixes an issue where the pen tool can't draw up to the edge for certain configurations on an iPhone.
+*  Fixes an issue where quickly destroying/recreating libraries for indexed search could result in partial indexes.
+*  Fixes an issue in `PSPDFResizableView` related to unusual view controller configurations where the view could overlap the parent view and subsequently no longer correctly responding to touch events.
+*  Fixes an issue related to rotation when the gallery is moved to fullscreen from within a popover.
+*  Fixes an issue where missing fields in the digital signature validation code could result in a (null) output.
+*  Fixes an issue related to multiple saving via the same XFDF annotation provider.
+*  Fixes an issue related to early-reloading of the thumbnail bar that could result in missing bar button items for special configurations.
+*  Fixes an issue where the navigation bar could disappear after the annotation toolbar has been moved to a different position.
+
+__v3.7.6 - 4/July/2014__
 
 *  Simplifies usage of `PSPDFMediaPlayerCoverModeClear` in the gallery.
 *  Updates the Vimeo integration to use the new API endpoint.
