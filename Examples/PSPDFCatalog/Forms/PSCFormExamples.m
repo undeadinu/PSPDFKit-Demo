@@ -101,7 +101,6 @@ static PSPDFViewController *PSPDFFormExampleInvokeWithFilename(NSString *filenam
 - (id)init {
     if (self = [super init]) {
         self.title = @"PDF AcroForm";
-        self.contentDescription = @"PSPDFKit Complete/Enterprise supports PDF AcroForms.";
         self.category = PSCExampleCategoryForms;
         self.priority = 20;
         PSPDFDigitalSignatureManager.sharedManager.delegate = PSCFormExampleSignatureDelegate.sharedDelegate;
@@ -127,7 +126,7 @@ static PSPDFViewController *PSPDFFormExampleInvokeWithFilename(NSString *filenam
 - (id)init {
     if (self = [super init]) {
         self.title = @"Programmatic Form Filling";
-        self.contentDescription = @"Automatically fills out all forms in code.";
+        self.contentDescription = @"Automatically fills out form elements.";
         self.category = PSCExampleCategoryForms;
         self.priority = 30;
     }
