@@ -27,12 +27,10 @@
 @property (nonatomic, copy, readonly) NSURL *fileURL;
 
 /// The input stream. If you set `fileURL`, this is automatically set for you.
-/// Customize to use a different source or a custom (crypto) input stream.
-@property (nonatomic, strong) NSInputStream *inputStream;
+@property (nonatomic, strong, readonly) NSInputStream *inputStream;
 
 /// The output stream. If you set `fileURL`, this is automatically set for you.
-/// Customize to use a different target or a custom (crypto) output stream.
-@property (nonatomic, strong) NSOutputStream *outputStream;
+@property (nonatomic, strong, readonly) NSOutputStream *outputStream;
 
 /// Will force-load annotations. Usually invoked lazily.
 /// Use `hasLoadedAnnotationsForPage:` with any page (usually page 0) to detect if the annotations have been loaded yet.
@@ -47,5 +45,15 @@
 /// Encrypt mutable data. PSPDFKit Basic/Complete feature.
 /// If set to nil, the default implementation will be used.
 @property (atomic, copy) void (^encryptDataBlock)(PSPDFXFDFAnnotationProvider *provider, NSMutableData *data);
+
+/// @name Stream Creators
+
+/// This block will be called when we first access `inputStream`.
+/// The default implementation will create a default input stream from `fileURL`.
+@property (atomic, copy) NSInputStream * (^createInputStreamBlock)(PSPDFXFDFAnnotationProvider *provider);
+
+/// This block will be called when we first access `outputStream`.
+/// The default implementation will create a default output stream from `fileURL`.
+@property (atomic, copy) NSOutputStream * (^createOutputStreamBlock)(PSPDFXFDFAnnotationProvider *provider);
 
 @end

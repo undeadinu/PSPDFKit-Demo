@@ -20,3 +20,10 @@
 - (id)initWithVerificationController:(id<PSPDFDigitalSignatureVerificationHandler>)verificationHandler;
 
 @end
+
+@interface PSPDFSignedFieldViewController (SubclassingHooks)
+
+// The image view that shows the status icon.
+@property (nonatomic, strong, readonly) UIImageView *imageView;
+
+@end

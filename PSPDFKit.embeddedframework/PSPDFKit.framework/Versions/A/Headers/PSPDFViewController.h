@@ -646,6 +646,7 @@ extern NSString *const PSPDFPresentOptionPersistentCloseButtonMode; // Set to en
 @interface PSPDFViewController (SubclassingHooks)
 
 /// Override this initializer to allow all use cases (storyboard loading, etc)
+/// @warning Do not call this method directly, except for calling super when overriding it.
 - (void)commonInitWithDocument:(PSPDFDocument *)document NS_REQUIRES_SUPER;
 
 // Executes a PDF action. (open link, email, page, document, etc)

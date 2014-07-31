@@ -4,10 +4,29 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
-__v3.7.7 - 21/July/2014__
+__v3.7.8 - 1/August/2014__
 
 We're hard at work on a new upcoming major release that will be fully ready for iOS 8 while also supporting iOS 7.
 The PSPDFKit 3.x branch will remain compatible with iOS 6+, while PSPDFKit 4.x will fully embrace iOS 7 and 8.
+
+*  Popup annotations, when written, now by default have the same bounding box as the parent annotation.
+*  Improves handling of link annotations with an empty URL.
+*  Continuous scroll mode now chooses the current pages based on the largest visible page, not the first visible page.
+*  Path resolving now also resolves "Caches" instead of just "Cache".
+*  Improves protection against manually calling `commonInitWithDocument:`.
+*  Improves placement of free text annotations that are close to the right page border.
+*  API: The interface for the `PSPDFXFDFAnnotationProvider` changed to reflect the possibility of stream recreation.
+   Instead of setting the `inputStream` and `outputStream` directly, use `createInputStreamBlock` and `createOutputStreamBlock`.
+*  Fixes a UI issue where the separators for the signature chooser could end up not visible on iOS 7.
+*  Fixes an issue where cropping images could end up in black bars on parts of the image.
+*  Fixes an issue where the text selection knobs could be slightly offset after a device rotation.
+*  Fixes an issue with the fullscreen gallery transition on an iPhone.
+*  Fixes a rare condition where a selected annotation would not hide the un-selected one, leaving two copies on the screen until the page changed.
+*  Fixes a race condition that could result in rendering issues for form objects with auto-resizing text.
+*  Fixes an issue where PSPDFKit would print a warning for KVO'ing weak properties that was not actually declared as weak.
+*  Fixes an issue where the scrobble bar would not properly update itself after a rotation change.
+
+__v3.7.7 - 21/July/2014__
 
 *  Videos in the gallery are now reset if they are played till the end and the page changes.
 *  The 'hidden' flag for annotation objects is now also honored for the gallery. (including audio)
