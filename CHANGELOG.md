@@ -4,6 +4,15 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.9 - 6/August/2014__
+
+*  Fixes handling of nested form check boxes that are used as radio boxes.
+*  Fixes an issue that could truncate text from a choice form element.
+*  Fixes a rare UI issue with duplicated ink elements during erasing.
+*  Fixes an issue where in landscape the keyboard could appear unexpectedly when using radio button form elements.
+*  Fixes an issue where the page indicator in the scrobble bar sometimes was not correctly updated.
+*  Fixes an issue on iOS 6 when showing the signature selector view controller.
+
 __v3.7.8 - 1/August/2014__
 
 We're hard at work on a new upcoming major release that will be fully ready for iOS 8 while also supporting iOS 7.
