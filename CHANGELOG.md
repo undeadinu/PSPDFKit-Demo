@@ -4,6 +4,14 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.10 - 17/August/2014__
+
+*  Rendering the audio annotation preview no longer pauses background music.
+*  Makes sure the signature image in the signature view controller is the same regardless of the device orientation.
+*  Fixes an issue with rendering right-aligned free text annotations in too small bounding boxes.
+*  Fixes a few minor issues when exporting/importing from/to XFDF for stamp and ink annotations.
+*  Fixes an issue where alert view actions could be executed twice under iOS 8.
+
 __v3.7.9 - 6/August/2014__
 
 *  Fixes handling of nested form check boxes that are used as radio boxes.

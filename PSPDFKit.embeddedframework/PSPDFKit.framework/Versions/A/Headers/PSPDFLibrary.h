@@ -34,8 +34,7 @@ typedef NS_ENUM(NSUInteger, PSPDFLibraryIndexStatus) {
 /// You can register documents to be indexed in the background and then search for keywords within that collection.
 /// There can be multiple libraries, although usually one is enough for the common use case.
 /// See https://github.com/PSPDFKit/PSPDFKit-Demo/wiki/Full-text-document-search for further documentation.
-/// @note PSPDFLibrary is only available in some license packages (PSPDFKit Complete)
-/// @warning Processing PDFs takes quite some memory. We advise against running this in the background on an iPad 1, due to its hard memory limitations.
+/// @note Requires the `PSPDFFeatureMaskIndexedFTS` feature flag.
 @interface PSPDFLibrary : NSObject
 
 /// @name Initialization

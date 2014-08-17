@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, PSPDFDigitalSignatureReferenceTransformMethod) {
     PSPDFDigitalSignatureReferenceTransformMethodIdentity = 1 << (4-1)
 };
 
-/// Only available for PSPDFKit Complete with OpenSSL.
+/// @note Requires the `PSPDFFeatureMaskDigitalSignatures` feature flag and OpenSSL.
 @interface PSPDFDigitalSignatureReference : PSPDFModel
 
 /// Designated initializer.
