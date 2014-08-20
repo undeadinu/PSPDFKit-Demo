@@ -4,6 +4,13 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.11 - 20/August/2014__
+
+*  Improves user name guessing for the annotation creation user.
+*  Fixes an issue where saving notes multiple times within the same session could cause a duplication.
+*  Fixes an issue with handling umlauts during a save in certain text field form elements.
+*  Fixes a minor logging issue where in rare cases `NSScanner` could complain about nil string arguments.
+
 __v3.7.10 - 17/August/2014__
 
 *  Rendering the audio annotation preview no longer pauses background music.
