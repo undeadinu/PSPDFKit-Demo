@@ -4,6 +4,14 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.12 - 1/September/2014__
+
+*  The predefined stamps now use the system locale instead of `en_US`.
+*  Fixes an issue where the scrollable thumbnail bar could get into a state where it is not correctly displayed.
+*  Fixes an issue with creating custom stamp annotations on iPad.
+*  Fixes an issue with writing annotations into files that have unusual and non-standard compliant object headers.
+*  Fixes a caching issue with extremely long file names.
+
 __v3.7.11 - 20/August/2014__
 
 *  Improves user name guessing for the annotation creation user.
