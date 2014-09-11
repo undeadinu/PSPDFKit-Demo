@@ -83,7 +83,8 @@ typedef NS_ENUM(NSUInteger, PSPDFRenderQueuePriority) {
 /// Set to `PSPDFRenderQueuePriorityNormal` to temporarily pause cache requests.
 @property (nonatomic, assign) PSPDFRenderQueuePriority minimumProcessPriority;
 
-/// Amount of render requests that run at the same time. Defaults to 2 for modern devices.
+/// Amount of render requests that run at the same time. Defaults to 1.
+/// @note Apple's PDF renderer has concurrency issues, increasing this value might reduce the framework stability.
 @property (atomic, assign) NSUInteger concurrentRunningRenderRequests;
 
 @end

@@ -4,6 +4,16 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.13 - 11/September/2014__
+
+*  Works around a rare PDF rendering crash in iOS 8.
+*  Using `fillColor` on `PSPDFButtonFormElement` now respects the `alpha` property.
+*  Fixes an issue in the text extraction logic when converting the contents of glyphs from unknown/not loadable fonts.
+*  Fixes an issue where entering erase mode could hide the annotation toolbar.
+*  Fixes an issue where the progress HUD would sometimes not correctly reposition when the keyboard appears in landscape.
+*  Fixes an issue where the note annotation popover could become visible when deleting multiple annotations (including a note) at the same time.
+*  Fixes an issue where the signature view controller failed to display on iPhone/iOS 8.
+
 __v3.7.12 - 1/September/2014__
 
 *  The predefined stamps now use the system locale instead of `en_US`.
