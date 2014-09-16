@@ -4,6 +4,13 @@ Subscribe to updates: [RSS](https://github.com/PSPDFKit/PSPDFKit-Demo/commits/ma
 
 We have a blog that highlights the best new features and changes: [http://blog.pspdfkit.com](http://blog.pspdfkit.com)
 
+__v3.7.14 - 16/September/2014__
+
+PSPDFKit 4.0 will be released on Monday, September 22, 2014 with full support for Xcode 6 with iOS 8 while also supporting iOS 7.
+The PSPDFKit 3.7.x branch will remain compatible with Xcode 5.1.1 and iOS 6+.
+
+*  Fixes an issue where the Camera/Image Picker UI sometimes wouldn’t show up on iPad/iOS 8.
+
 __v3.7.13 - 11/September/2014__
 
 *  Works around a rare PDF rendering crash in iOS 8.
@@ -47,9 +54,6 @@ __v3.7.9 - 6/August/2014__
 *  Fixes an issue on iOS 6 when showing the signature selector view controller.
 
 __v3.7.8 - 1/August/2014__
-
-We're hard at work on a new upcoming major release that will be fully ready for iOS 8 while also supporting iOS 7.
-The PSPDFKit 3.x branch will remain compatible with iOS 6+, while PSPDFKit 4.x will fully embrace iOS 7 and 8.
 
 *  Popup annotations, when written, now by default have the same bounding box as the parent annotation.
 *  Improves handling of link annotations with an empty URL.
